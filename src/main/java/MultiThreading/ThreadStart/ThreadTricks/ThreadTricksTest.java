@@ -4,7 +4,7 @@ public class ThreadTricksTest {
 
     public static void main(String[] args) {
         Parent parent = new Parent();
-        Child child = new Child();
+        Parent child = new Child();
 
         Thread thread1 = new Thread(() -> {
             try {
