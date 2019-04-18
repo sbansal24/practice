@@ -47,7 +47,7 @@ public class SpaceStationProblem {
             if (arr[k] == 1) {
                 right_present = true;
             }
-            int temp_max = 0;
+            int temp_max;
             if (left_present && right_present) {
                 temp_max = Math.min(left_distance, right_distance);
             } else if (left_present) {
