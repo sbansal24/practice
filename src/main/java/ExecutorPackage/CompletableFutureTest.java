@@ -14,6 +14,7 @@ public class CompletableFutureTest {
     }
     {
         value = 25;
+        System.out.println("normal block of code");
     }
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println(value);
@@ -22,12 +23,13 @@ public class CompletableFutureTest {
         CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> getData(10))
                 .thenApply(data->applyData(data));
         System.out.println(completableFuture.get());
+        executorService.shutdown();
     }
 
 
     private static String applyData(String data) {
         System.out.println(Thread.currentThread().getName());
-        return data;
+        return data+"hello";
     }
 
     private static String getData(int i) {

@@ -14,6 +14,7 @@ public class ExecutorCompletionServiceTest<T> {
         futureList.add(executorCompletionService.submit(new CompletionTask("task3", 6000)));
         futureList.add(executorCompletionService.submit(new CompletionTask("task4", 1000)));
 
+
         futureList.forEach(integerFuture -> {
             try {
                 Future<Integer> future = executorCompletionService.take();

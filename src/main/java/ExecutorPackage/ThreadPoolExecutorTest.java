@@ -4,6 +4,7 @@ import java.util.concurrent.*;
 
 public class ThreadPoolExecutorTest {
     public static void main(String[] args) {
+        Executors.newCachedThreadPool();
         ExecutorService threadPoolExecutor = new ThreadPoolExecutor(5, 8, 2L,
                 TimeUnit.MILLISECONDS, new ArrayBlockingQueue<>(2), new ThreadFactory() {
             @Override

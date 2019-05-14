@@ -1,6 +1,5 @@
 package ExecutorPackage;
 
-import java.util.Random;
 import java.util.concurrent.Callable;
 
 public class CompletionTask implements Callable<Integer> {

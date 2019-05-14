@@ -1,7 +1,9 @@
 package Immutability;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ImmutabilityTest {
@@ -9,15 +11,19 @@ public class ImmutabilityTest {
     public static void main(String[] args) {
         ImmutabilityTest test = new ImmutabilityTest();
         Date date = new Date();
-        Investor investor1 = new Investor("investor1", 1, date);
-        Investor investor2 = new Investor("investor1", 1,date);
+        List<Integer> list = new ArrayList<>();
+        list.add(10);;
+        list.add(20);;
+        Investor investor1 = new Investor("investor1", 1, date, list);
+        Investor investor2 = new Investor("investor1", 1,date, list);
         System.out.println(investor1);
         date.setTime(178178999798L);
+        investor1.getList().add(30);
 
         System.out.println(investor1);
         System.out.println(investor2);
         investor1.getJoinDate().setTime(111178789798L);
-
+        System.out.println("**********");
         System.out.println(investor1.getJoinDate());
 
         ConcurrentHashMap<String, Integer> hashMap = new ConcurrentHashMap<>();
