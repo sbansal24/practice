@@ -1,4 +1,4 @@
-package Algorithms.SortingAlgos;
+package Algorithms.SearchingAndSortingAlgos;
 
 public class QuickSort {
     public static void main(String[] args) {

@@ -13,9 +13,7 @@ public class ExecutorServceiWithThreadPoolExecutor {
         Thread t1 = new Thread(()->{
            throw new RuntimeException();
         });
-        t1.setUncaughtExceptionHandler((t, e) -> {
-            System.out.println("Exception while running");
-        });
+        t1.setUncaughtExceptionHandler((t, e) -> System.out.println("Exception while running"));
 
         Thread t2 = new Thread(()->{
             try {

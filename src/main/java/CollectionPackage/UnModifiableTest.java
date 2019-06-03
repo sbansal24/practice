@@ -19,9 +19,9 @@ public class UnModifiableTest {
 //        Collections.sort(list, Comparator.comparing(Investor::getInvestorAge));
 
         Iterator<Investor> itr = list.iterator();
-        while(itr.hasNext()){
-
-        }
+//        while(itr.hasNext()){
+//
+//        }
 
 //        Iterable<Investor> itr1 = list.iterator();
     }
@@ -30,6 +30,6 @@ public class UnModifiableTest {
 //        List<Investor> list1 = new ArrayList<>(list);
 //        list.get(0).setInvestorAge(30);
         list = new ArrayList<>();
-        list.add(new Investor("i2", "investor2", 30));
+        list.add(new Investor("i3", "investor2", 30));
     }
 }

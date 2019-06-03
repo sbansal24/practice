@@ -1,5 +1,6 @@
 package DailyPractice.March13;
 
+import java.util.Collections;
 import java.util.HashMap;
 
 public class TestClass {
@@ -13,5 +14,6 @@ public class TestClass {
         System.out.println(map.remove(2));
         System.out.println(map);
 //        map.forEach();
+        Collections.unmodifiableMap(map);
     }
 }

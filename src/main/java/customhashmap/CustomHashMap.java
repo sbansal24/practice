@@ -16,6 +16,6 @@ public class CustomHashMap<K,V> {
     }
 
     private int hash(K key){
-        return Math.abs(key.hashCode()) % INITIAL_CAPACITY;
+        return Math.abs(key.hashCode()) & INITIAL_CAPACITY;
     }
 }

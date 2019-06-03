@@ -2,13 +2,14 @@ package PCWithBQ;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class PCWithBlockingQueue {
 
     public static void main(String[] args) {
-        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(1);
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(1);
         Producer producer = new Producer(queue);
         Consumer consumer = new Consumer(queue);
 
@@ -16,8 +17,8 @@ public class PCWithBlockingQueue {
         Thread t2 = new Thread(consumer);
         t1.setUncaughtExceptionHandler((t, e) -> System.out.println(t.getName() + "has done with " + e.getMessage()));
 //
-//        t1.start();
-//        t2.start();
+        t1.start();
+        t2.start();
 
         PriorityQueue queue1 = new PriorityQueue<>(10);
         queue1.add(10);

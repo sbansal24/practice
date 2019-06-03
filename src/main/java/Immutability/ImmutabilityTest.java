@@ -12,8 +12,8 @@ public class ImmutabilityTest {
         ImmutabilityTest test = new ImmutabilityTest();
         Date date = new Date();
         List<Integer> list = new ArrayList<>();
-        list.add(10);;
-        list.add(20);;
+        list.add(10);
+        list.add(20);
         Investor investor1 = new Investor("investor1", 1, date, list);
         Investor investor2 = new Investor("investor1", 1,date, list);
         System.out.println(investor1);

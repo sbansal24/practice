@@ -1,7 +1,5 @@
 package Java8;
 
-import java.util.Collections;
-
 public class StaticDefaultTest implements StaticDefaultInterface {
     public static void main(String[] args) {
         StaticDefaultInterface.staticMethod();

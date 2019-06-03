@@ -11,9 +11,6 @@ public class Investor {
     private final Date joinDate;
     private final List<Integer> list;
 
-
-
-
     public Investor(String investorName, int investorId, Date joinDate, List<Integer> list) {
         this.investorName = investorName;
         this.investorId = investorId;

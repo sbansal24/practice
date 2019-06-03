@@ -45,4 +45,8 @@ public class TestClass {
         System.out.println("Number function");
     }
 
+//    public void test(String i) {
+//        System.out.println("String function");
+//    }
+
 }

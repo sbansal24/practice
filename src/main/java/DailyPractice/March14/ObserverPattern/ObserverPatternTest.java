@@ -9,7 +9,7 @@ public class ObserverPatternTest {
 
         observer1.setSubject(topic);
 
-        observer1.update();
+//        observer1.update();
 
         topic.postMessage("hello");
     }

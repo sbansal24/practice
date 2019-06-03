@@ -13,6 +13,7 @@ public class PairExample {
         list.add(2);
 
         list.stream().mapToInt(Integer::intValue).toArray();
+        System.out.println(list);
 
         List<String> stringList = new ArrayList<>();
         stringList.add("a");
