@@ -73,7 +73,7 @@
     </dependencies>
 
     <properties>
-        <spring.version>4.3.17.RELEASE</spring.version>
+        <spring.version>4.3.21.RELEASE</spring.version>
     </properties>
 
 </project>
